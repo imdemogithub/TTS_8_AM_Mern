@@ -1,0 +1,7 @@
+PAIRED
+    - opening and closing
+        - inline and block level tag
+            - content manage in between open and close tag
+UNPAIRED
+    - self closing tag - all of this type tags are inline
+        - content manage in attributes
