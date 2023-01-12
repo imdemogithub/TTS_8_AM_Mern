@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS</title>
+        <style>
+            body {
+                background: seagreen;
+                /* background-color: black;
+                background-image: url(https://www.w3schools.com/html/img_girl.jpg);
+                background-size: 50%;
+                background-repeat: no-repeat; */
+                /* background: url(https://www.w3schools.com/html/img_girl.jpg) black no-repeat; */
+                /* color: white; */
+            }
+            p {
+                color: white;
+            }
+            #line1 {
+                color: black;
+                font-size: 25px;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: bold;
+                font-style: italic;
+            }
+            .abc {
+                color: black;
+                font: bold italic 20px "Courier New";
+            }
+            /* .abc:nth-child(4) {
+                color: antiquewhite;
+            } */
+            .abc.second {
+                color: aliceblue;
+            }
+            .abc.third {
+                color: brown;
+            }
+            p[myattr] {
+                background-color: aqua;
+                transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.6s;
+            }
+            p:hover {
+                cursor: pointer;
+                user-select: none;
+            }
+            p[myattr]:hover {
+                background-color: bisque;
+                color: black;
+            }
+            .abc:hover ~ .abc.third {
+                background-color: bisque;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="line1">hello</p>
+        <p class="abc">how are you</p>
+        <p class="abc second">welcome to</p>
+        <p class="abc third" myattr="demo">tops technologies</p>
+    </body>
+</html>
